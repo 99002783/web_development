@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="lib/jquery.js"></script>
+    <script>
+jQuery(document).ready(function(){
+        //invoked when the user selects the input to type...
+        jQuery("input").focus(function(){
+        jQuery(this).css("background-color", "gold");
+        })
+        //Invoked when the element looses the focus of the user....
+        jQuery("input").focusout(function(){
+        jQuery(this).css("background-color", "white");
+        })
+        
+        jQuery("button").click(function(){
+        let name = jQuery("input:first").val();
+        let address = jQuery("input:eq(1)").val();
+        let phone = jQuery("input:eq(2)").val();
+        let amount = jQuery("input:last").val();
+        let display = `The Name ${name} from ${address} contactable at ${phone} has paid the bill of Rs. ${amount}`;
+        jQuery("div:eq(1)>p").text(display);
+        })
+        })
+        
+    </script>
+</head>
+<body>
+    <div>
+        <h2>register the customer</h2>
+        <p> <input type="text" placeholder="enter the name"></p>
+        <p> <input type="text" placeholder="enter the address"></p>
+        <p> <input type="text" placeholder="enter the phone no"></p>
+        <p> <input type="text" placeholder="Enter the BillAmount"> </p>
+        <button>Post Details</button>
+    </div>
+    <div>
+        <p>
+            
+        </p>
+    </div>
+</body>
+</html>

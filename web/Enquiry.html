@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+    <title>Enquiry page</title>
+    <style>
+        h1
+        {
+            text-align: center;
+            
+        }
+        div
+        {
+            text-align: center;
+            font-size: 20px;
+        }
+        nav
+        {
+             text-align: center;
+             padding: 30px;
+             margin: 0px;
+             background-color:beige ;
+        }
+        a
+        {
+            padding:20px ;
+            margin: 30px;
+            color: black;
+        }
+        body{
+            background-image: url('bg.jpg'); 
+        }
+    </style>
+</head>
+<body>
+    <h1>Enquiry page</h1>
+    
+    <header>
+        <nav>
+        <a href="home.html">HOME</a>
+        <a href="about.html">ABOUT</a>
+        <a href="rooms.html">ROOMS</a>
+        <a href="facilities.html">FACILITIES</a>
+        <a href="Enquiry.html">ENQUIRY</a>
+        </nav>
+    </header>
+    <form>
+        <div>
+        <p><input type="text" placeholder="Enter the name" id="custname"></p>
+        <p><input type="tel" placeholder="Enter the contact no" id="custphone"> </p>
+        <p><input type="email" placeholder="Enter the Email" id="custemail"></p>
+        <p><input type="date"  placeholder="checkin date" id="cindate"></p>
+        <p><input type="number" placeholder="No of days" id="days"></p>
+        <p>
+            Food preference:
+            <input type="radio" Name="food">Vegetarian
+            <input type="radio"Name="food" >Non-Vegetarian
+        </p>
+<p>
+    
+    other preferences:
+            <input type="checkbox" >Spa
+            <input type="checkbox">pool
+            <input type="checkbox">gym
+            <input type="checkbox">Airport pickup
+            <input type="checkbox">Airport drop
+</p>
+<input type="submit" name=" button">
+    </div>
+    </form>
+</body>
+</html>

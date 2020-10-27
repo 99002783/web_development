@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./mainstyle.css">
+    <title>Forms</title>
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <a href="./Ex01.html">basics</a>
+            <a href="./Ex02.html">Formatting</a>
+            <a href="./Ex03.html">Tables</a>
+            <a href="./Ex04.html">Image</a>
+            <a href="./Ex05.html">list</a>
+            <a href="./Ex06.html">forms</a>
+
+        </nav>
+    </header>
+    <form class="left">
+        <p><input type="text" placeholder="Enter the name" id="empName"></p>
+        <p><input type="email" placeholder="Enter the Email" id="empEmail"></p>
+        <p><input type="date" placeholder="Enter the DOB" id="empDOB"></p>
+        <p><input type="tel" placeholder="Enter the mobile no" id="empNo"></p>
+        <p>
+            enter the complete address:
+            <textarea i="empAddress">
+            </textarea>
+        </p>
+        <p> 
+            Select the qualification:
+            <select id="empQualification" >
+                <option>Graduation</option>
+                <option>Under Graduation</option>
+                <option>Post Graduation</option>
+                <option>School</option>
+
+            </select>
+        </p>
+            <datalist id="states">
+                <option> Andhara pradesh</option>
+                <option> Telangana</option>
+                <option> delhi</option>
+                <option> Madhya pradesh</option>
+                <option> kerala</option>
+            </datalist>
+<p>
+
+<input type="text" placeholder="select state" list="states">
+</p>
+        
+        <p>
+            Billing to:
+            <input type="radio" name="loc">Home 
+            <input type="radio" name="loc">Office
+        </p>
+        <p>
+            other requirements:
+            <input type="checkbox" >restuarant
+            <input type="checkbox">coffee shop
+            <input type="checkbox">pool
+            <input type="checkbox">gym
+
+
+        </p>
+        <p>
+            RATE YOURSELF IN HTML:
+            <input type="range" min="1" max="10"  step="1">
+
+        </p>
+        <button type="button">Register</button>
+       </form>
+    <footer>
+        <hr/>
+        &copy;copyrights 
+    </footer>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./scripts/mathCalc.js"> 
+    </script>
+    <script>
+        function invokeOperation()
+        {
+            var input1=document.getElementById("number1").value;
+            var input2=document.getElementById("number2").value;
+            var op1=document.getElementById("option").value;
+            var result=performOperation(input1,input2,op1)
+            var pRes=document.getElementById("presult");
+            pRes.innerText="the result :" + result;
+
+        }
+    </script>
+    <style>
+        *
+        {
+            font-size: 20px;
+            background-color: beige;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+        }
+        button
+        {
+            color: indianred;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculator program</h1>
+    <p>
+       enter the first value: <input   type="text" placeholder="enter the  first number" id ="number1">
+    </p>
+   <p> enter the second value:<input   type="text" placeholder="enter the second number" id ="number2"></p>
+   <p>
+       select the operand:
+   <select id="option">
+       <option > + </option>
+       <option > - </option>
+       <option > x </option>
+       <option > /</option>
+ </select>
+</p>
+<p> <button type ="button" onclick="invokeOperation()">=</button></p>
+<p id="presult">
+</p>
+</body>
+</html>

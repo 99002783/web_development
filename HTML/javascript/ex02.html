@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <script>
+        function checkForNumber(value){
+                if(isNaN(value)){
+                    alert("Not a valid number");
+                    return false;
+            }
+            else return true;
+        }
+        function calcProgram(){
+            var val1=prompt("Enter the First Value");
+            if(!checkForNumber(val1)){
+                return;
+            }
+            val1=parseFloat(val1);
+
+            var val2=prompt("Enter the second Value");
+            if(!checkForNumber(val2)){
+                return;
+            }
+            val2=parseFloat(val2);
+
+            var operand=prompt("Enter the operand as +,-X or /");
+            switch(operand){
+                case "+":
+                alert("The added value is"+(val1+val2));
+                break;
+                case "-":
+                alert("The Subtracted value is"+(val1-val2));
+                break;
+                case "X":
+                alert("The Multiplicated value is"+(val1*val2));
+                break;
+                case "/":
+                alert("The divided value is"+(val1/val2));
+                break;
+                default:
+                    alert("Invalid Operation is selected, Not Computable");
+                    break;
+        }
+        }
+        calcProgram();
+        
+    </script>
+</body>
+</html>

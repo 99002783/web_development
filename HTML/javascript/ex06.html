@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>classes and objects</title>
+    <script src="scripts/classes.js"> </script>
+    <script>
+        function createObj()
+        {
+            let id=parseInt(document.getElementById("empId")).value;
+            let name=document.getElementById("empName").value;
+            let address=document.getElementById("empAddress").value;
+            let empobj= new employee(id,name,address);
+            let text=`<h1>The name: ${empobj.empName}</h1><p>The empadress:${empobj.empAddress}</p>`
+            document.getElementById("pDisplay").innerHTML=text;
+        }
+    </script>
+
+</head>
+<body>
+    <div>
+<h1> classes and objects</h1>
+    <p>
+        Enter employee ID:<input type="number" id="empId">
+    </p>
+
+    <p>
+        Enter employee name:<input type="text" id="empName">
+    </p>
+
+    <p>
+        Enter employee Address:<input type="text" id="empAddress">
+    </p>
+    <p>
+        <button type="button" onclick="createObj()">register</button>
+    </p>
+    
+    </div>
+    <div>
+        
+        <h1> details are:</h1>
+        <p id="pDisplay">
+        </p>
+    </div>
+    
+</body>
+</html>
